@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VIGIA - Admin</title>
+        <!-- Estilos -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" />
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/L.Control.Window.css"> <!-- Caminho correto -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="./css/leaflet-sidebar.css">
+
+
+    
+        <!-- Scripts -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+        <script src="./java/L.Control.Window.js" defer></script> <!-- Caminho correto -->
+        <script src="./java/script.js" defer></script>
+        <script src="./java/leaflet-sidebar.js" defer></script>
+
+    </head>
+
+    
+<body>
+    <!-- Botões do menu -->
+    <div id="menu">
+        <button id="draw-rectangle">Desenhar Retângulo</button>
+        <button id="draw-circle">Desenhar Círculo</button>
+        <button id="draw-polygon">Desenhar Polígono</button>
+        <button id="locate">Centralizar Localização Atual</button>
+        <button id="route">Criar Rota</button>
+    </div>
+
+    <div id="search-bar">Barra de busca</div>
+    <div id="map"></div>
+    <div id="info-box">
+        <textarea id="area-description" placeholder="Descrição da área"></textarea>
+        <button id="confirm-area">Confirmar</button>
+        <button id="cancel-area">Cancelar</button>
+    </div>
+    <div id="sidebar" class="leaflet-sidebar collapsed">
+        <!-- Aba 1 -->
+        <div class="leaflet-sidebar-tabs">
+            <ul role="tablist">
+                <li><a href="#home" role="tab"><i class="fa fa-home"></i></a></li>
+                <li><a href="#info" role="tab"><i class="fa fa-info"></i></a></li>
+            </ul>
+        </div>
+    
+        <div class="leaflet-sidebar-content">
+            <!-- Conteúdo da Aba Home -->
+            <div class="leaflet-sidebar-pane" id="home">
+                <h1 class="leaflet-sidebar-header">
+                    Home
+                    <span class="leaflet-sidebar-close"><i class="fa fa-chevron-left"></i></span>
+                </h1>
+                <p>Conteúdo da aba Home!</p>
+            </div>
+    
+            <!-- Conteúdo da Aba Info -->
+            <div class="leaflet-sidebar-pane" id="info">
+                <h1 class="leaflet-sidebar-header">
+                    Info
+                    <span class="leaflet-sidebar-close"><i class="fa fa-chevron-left"></i></span>
+                </h1>
+                <p>Conteúdo da aba Info!</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
